@@ -42,6 +42,8 @@ public class StudentArray_Main extends JFrame {
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		setLocationRelativeTo(null);
 		
+		getRootPane().setDefaultButton(StudentArray_Panel.submitButton);
+		
 		
 		add(panel);
 	}

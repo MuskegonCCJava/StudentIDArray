@@ -16,7 +16,7 @@ public class StudentArray_Service {
 	}
 
 	public String[] getFname() {
-		
+	
 		return fname;
 	}
 
