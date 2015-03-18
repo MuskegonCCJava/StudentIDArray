@@ -14,13 +14,13 @@ public class StudentArray_Panel extends Panel {
 	StudentArray_VariablesforGUI guiElements = new StudentArray_VariablesforGUI();
 	StudentArray_Service service = new StudentArray_Service();
 	
-	private JTextField inputField = new JTextField();
+	public static JTextField inputField = new JTextField();
 	private JLabel inputLabel = new JLabel("Student ID:");
-	private JLabel fnameLabel = new JLabel("First Name:");
-	private JLabel gpaLabel = new JLabel("GPA:");
+	public static JLabel fnameLabel = new JLabel("First Name:");
+	public static JLabel gpaLabel = new JLabel("GPA:");
 	
-	private static JLabel fnameOutput = new JLabel();
-	private static JLabel gpaOutput = new JLabel();
+	public static JLabel fnameOutput = new JLabel();
+	public static JLabel gpaOutput = new JLabel();
 	
 	static JButton submitButton = new JButton("Submit");
 
@@ -44,8 +44,10 @@ public class StudentArray_Panel extends Panel {
 		inputLabel.setBounds(guiElements.getXalignment()[1], guiElements.getYalignment()[0], guiElements.getWidth()[2], guiElements.getHeight()[2]);
 		
 		fnameLabel.setBounds(guiElements.getXalignment()[2], guiElements.getYalignment()[1], guiElements.getWidth()[2], guiElements.getHeight()[2]);
+		fnameLabel.setVisible(false);
 		
 		gpaLabel.setBounds(guiElements.getXalignment()[2], guiElements.getYalignment()[2], guiElements.getWidth()[2], guiElements.getHeight()[2]);
+		gpaLabel.setVisible(false);
 		
 		fnameOutput.setBounds(guiElements.getXalignment()[3], guiElements.getYalignment()[1], guiElements.getWidth()[2], guiElements.getHeight()[2]);
 		
