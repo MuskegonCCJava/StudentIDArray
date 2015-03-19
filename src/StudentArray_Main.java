@@ -44,8 +44,7 @@ public class StudentArray_Main extends JFrame {
 		
 		getRootPane().setDefaultButton(StudentArray_Panel.submitButton);
 		
-		
-		add(panel);
+				add(panel);
 	}
 
 }
