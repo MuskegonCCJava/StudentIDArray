@@ -1,8 +1,10 @@
+/*StudentArray_Main by Kyle Wolff and Brandon Vandermey*/
+
 import java.awt.EventQueue;
-import java.net.URISyntaxException;
-import java.text.ParseException;
+import java.util.Date;
 
 import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 
 import org.w3c.dom.events.EventException;
 
@@ -11,6 +13,8 @@ public class StudentArray_Main extends JFrame {
 	
 	 StudentArray_VariablesforGUI guiElements = new  StudentArray_VariablesforGUI();
 	 StudentArray_Panel panel = new StudentArray_Panel();
+	 
+	 static Date today = new Date();
 
 	public static void main (String[] args){
 		
@@ -21,8 +25,10 @@ public class StudentArray_Main extends JFrame {
 			
 			try {
 				
+				JOptionPane.showMessageDialog(null, "StudentArray by Kyle Wolff and Brandon VanderMey " + today,"Message", JOptionPane.CLOSED_OPTION);
 				StudentArray_Main frame = new StudentArray_Main();
 				frame.setVisible(true);
+			
 				
 				} catch(EventException e)
 					{
@@ -37,6 +43,7 @@ public class StudentArray_Main extends JFrame {
 		int[] width = guiElements.getWidth();
 		int[] height = guiElements.getHeight();
 	
+		setTitle("ID");
 		setSize(width[0],height[0]);
 		
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
